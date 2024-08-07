@@ -1,0 +1,10 @@
+.task-main{
+    margin-left: 320px;
+}
+
+@media (max-width:768px){
+    .task-main{
+        margin-left: 20px;
+    }
+     
+}
