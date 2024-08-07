@@ -28,9 +28,9 @@ function Sidebar() {
                         <h2 className='side-head'><i className="fa-solid fa-bars-progress me-3"></i>Task Manager</h2>
                         <div className='sidebar-body2 '>
 
-                            <Link to={'/'} className='side-sec'>Tasks</Link>
+                            <Link to={'/'} onClick={handleClose} className='side-sec'>Tasks</Link>
                             
-                            <Link to={'/add'} className='side-sec'>Add New Task</Link>
+                            <Link to={'/add'}onClick={handleClose} className='side-sec'>Add New Task</Link>
                             <Link to={'/profile'} className='side-sec'>Profile</Link>
                         </div>
                     </div>

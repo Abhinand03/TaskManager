@@ -28,13 +28,14 @@
     position: fixed;
 }
 .side-btn{
-    width: 26rem;
+    width: 5rem;
     height: 51px;
     font-size: 25px;
-    position: relative;
+    position: fixed;
     background: #1049ac;
     left: 11px;
     top: 19px;
+    z-index: 1;
 
 }
 

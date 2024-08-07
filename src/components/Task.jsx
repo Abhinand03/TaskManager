@@ -1,6 +1,7 @@
 import React from 'react'
 import "./task.css"
 import { Link } from 'react-router-dom'
+import Edit from './Edit'
 
 function Task() {
     return (
@@ -18,10 +19,11 @@ function Task() {
                         </div>
 
                     </div>
-                    <div>
-                        <button  className='btn'><i className="fa-solid fa-pen-to-square" style={{ color: "#053fc7" }}></i> </button>
-                        <button  className='btn'><i class="fa-solid fa-eye" style={{ color: "#01ad2c" }}></i> </button>
-                        <button className='btn'> <i className="fa-solid fa-trash" style={{ color: " #d10000" }}></i></button>
+                    <div className='d-flex justify-content-evenly'>
+                        <Edit/>
+                        <button  className='btn'><i class=" fa-lg fa-solid fa-eye" style={{ color: "#01ad2c" }}></i> </button>
+                        <button className='btn'> <i className="fa-lg fa-solid fa-trash" style={{ color: " #d10000" }}></i></button>
+                    
                     </div>
                 </div>
             </div>

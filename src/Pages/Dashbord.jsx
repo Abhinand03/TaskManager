@@ -7,7 +7,7 @@ function Dashbord() {
     return (
         <>
             <div className='d-flex'>
-                <Sidebar />
+                
                 <div className='d-flex flex-wrap task-main'>
                     <Task />
                     <Task />
