@@ -6,20 +6,15 @@ import './dash.css'
 function Dashbord() {
     return (
         <>
+            <Sidebar />
+            
+
             <div className='d-flex'>
-                
-                <div className='d-flex flex-wrap task-main'>
+
+
+                <div className=''>
                     <Task />
-                    <Task />
-                    <Task />
-                    <Task />
-                    <Task />
-                    <Task />
-                    <Task />
-                    <Task />
-                    <Task />
-                    <Task />
-                    <Task />
+
 
                 </div>
 

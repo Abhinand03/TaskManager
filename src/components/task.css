@@ -1,8 +1,20 @@
 .task-body{
     background: #c8b1b1;
     padding: 21px;
-    width: 337px;
+    width: 360px;
     border-radius: 31px;
     margin: 20px;
 
+}
+
+@media(max-width:490px){
+    .task-body{
+        background: #c8b1b1;
+        padding: 19px;
+        width: 300px;
+        border-radius: 31px;
+        margin: 20px;
+        font-size: 13px;
+    
+    }
 }

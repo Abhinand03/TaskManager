@@ -1,0 +1,14 @@
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+
+}
+.pro-cont{
+    background: #9e95e1;
+    padding: 13px;
+    height: 320px;
+    width: 270px;
+    border-radius: 19px;
+}
