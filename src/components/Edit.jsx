@@ -16,17 +16,14 @@ function Edit({ props }) {
     })
     const { UPstatus, setUPstatus } = useContext(updateSatus)
 
+    //Edit task function
     const handleedit = async () => {
-
         const result = await updatetask(upDate)
         console.log(result);
         setUPstatus(!UPstatus)
         handleClose()
-
-
-
     }
-    console.log(upDate);
+   
 
 
 

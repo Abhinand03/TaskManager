@@ -38,7 +38,6 @@ function Login() {
     const handleregister = async () => {
         const { username, password, email } = userdata
         if (username && password && email) {
-
             const result = await register(userdata)
             console.log(result);
             if (result.status == 200) {
@@ -58,32 +57,27 @@ function Login() {
         }
         else {
             Swal.fire("Please fill all feild")
-
         }
-
     }
 
+    //User Login
     const handllogin = async () => {
         const result = await login(userdata)
-
         if(result.status==200)
-        {
-            
+        { 
             if (result.data.token) {
                 console.log(result.data);
                 sessionStorage.setItem("userId",result.data.userId)
                 sessionStorage.setItem('user',JSON.stringify(result.data.userDetails))
                 sessionStorage.setItem('token',result.data.token)
-                
-    
                 navigate('/dash')
             }
-
         }
         else{
             Swal.fire("Invalid email/password")
         }
     }
+    
     return (
         <>
             <div className='auth-main'>

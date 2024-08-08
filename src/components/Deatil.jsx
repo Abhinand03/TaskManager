@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-function Deatil({item}) {
+function Deatil({ item }) {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -21,20 +21,20 @@ function Deatil({item}) {
                     <Modal.Title>Task Details</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                   <div>
-                    <h1>{item.heading}</h1>
-                    <p>{item.message}</p>
-                    <p>current Staus:{item.status}</p>
-                    <p>Dead Line:{item.deadline}</p>
-                    
+                    <div>
+                        <h1>{item.heading}</h1>
+                        <p>{item.message}</p>
+                        <p>current Staus:{item.status}</p>
+                        <p>Dead Line:{item.deadline}</p>
 
-                   </div>
+
+                    </div>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="danger" onClick={handleClose}>
                         Close
                     </Button>
-                    
+
                 </Modal.Footer>
             </Modal>
         </>

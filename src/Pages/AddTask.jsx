@@ -17,14 +17,11 @@ function AddTask() {
   const navigate=useNavigate()
   
   const header = { "Authorization": `Bearer ${sessionStorage.getItem('token')}` }
+
+  //add Task
   const handlesubmit=async()=>{
-  
-    console.log(data);
-    
-
-    if(data.heading || data.message)
+      if(data.heading || data.message)
     {
-
       const result= await addtask(data,header)
       console.log(result);
       if(result.status==200){

@@ -13,11 +13,13 @@ function Task() {
     const [task, settask] = useState([])
     const [DeltStatus, setDeltStatus] = useState(false)
     const { UPstatus, setUPstatus } = useContext(updateSatus)
+
     const userid = sessionStorage.getItem('userId')
+
     const [search,setsearch]=useState({
-        userId:userid,search:""
-        
+        userId:userid,search:"" 
     })
+
     const res= JSON.stringify(search)
     console.log(res);
     
@@ -26,13 +28,12 @@ function Task() {
     const navigate=useNavigate()
 
 
-
+     //get task by userid
     const handelget = async (userId) => {
         const result = await gettask(userId,header)
         console.log(result)
         if (result.status == 200) {
-            settask(result.data)
-            
+            settask(result.data)         
         }
         else{
             Swal.fire(result.response.data)
@@ -42,6 +43,7 @@ function Task() {
 
     }
 
+    //Delete task
     const handeldelt = async (id) => {
         const result = await delteTask(id)
         console.log(result);
@@ -54,6 +56,7 @@ function Task() {
 
 
     }
+    
     useEffect(() => {
 
         handelget(res)

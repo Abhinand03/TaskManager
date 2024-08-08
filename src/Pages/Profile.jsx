@@ -11,8 +11,6 @@ function Profile() {
   const handlelogout=()=>{
     sessionStorage.clear()
     navigte('/')
-
-
   }
   
 

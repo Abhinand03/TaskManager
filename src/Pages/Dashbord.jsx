@@ -7,17 +7,9 @@ function Dashbord() {
     return (
         <>
             <Sidebar />
-            
-
-            
-
             <div className='d-flex'>
-
-
                 <div className=''>
                     <Task />
-
-
                 </div>
 
             </div>
