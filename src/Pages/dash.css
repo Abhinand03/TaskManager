@@ -1,18 +1,20 @@
 .task-main{
     margin-left: 320px;
+    position: relative;
+    top: 50px;
 }
 .ser-div{
-    display: flex;
+    display: block;
     justify-content: center;
 }
 .inp-ser{
-    position: relative;
+    position: fixed;
     top: 20px;
     padding: 16px 14px;
     width: 47%;
     border: 0px;
     border-radius: 20px;
-    margin-left: 237px;
+    margin-left: 37%;
 
 
 }
@@ -20,9 +22,11 @@
 @media (max-width:768px){
     .task-main{
         margin-left: 85px;
+        position: relative;
+        top: 50px;
     }
     .inp-ser{
-        position: relative;
+        position: fixed;
         top: 20px;
         padding: 16px 14px;
 
@@ -33,6 +37,10 @@
     
     
     }
+    .ser-div{
+        display: flex;
+    }
+
     
 }
 @media(max-width:530px){
@@ -40,5 +48,8 @@
         position: relative;
         top: 75px;
         margin-left: 5px;
+    }
+    .ser-div{
+        display: flex;
     }
 }

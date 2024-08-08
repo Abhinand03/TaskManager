@@ -32,6 +32,7 @@ function Task() {
         console.log(result)
         if (result.status == 200) {
             settask(result.data)
+            
         }
         else{
             Swal.fire(result.response.data)
@@ -60,7 +61,7 @@ function Task() {
     }, [UPstatus, DeltStatus,search])
     return (
         <>
-        <div className='ser-div mb-4'>
+        <div className='ser-div mb-4 '>
                 <input type="text" className='inp-ser' onChange={(e)=>{setsearch({...search,search:e.target.value})}} placeholder='Search your task..' />
             </div>
             <div className='d-felx'>
