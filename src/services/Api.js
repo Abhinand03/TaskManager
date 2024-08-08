@@ -1,6 +1,6 @@
 import {commanapi} from "./Apiconnection"
 
-const base_url="http://localhost:5000"
+const base_url="https://taskmangemnt-backend.onrender.com"
 
 //add task
 export const addtask=async(data,headers)=>{
